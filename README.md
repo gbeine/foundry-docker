@@ -1,5 +1,11 @@
 # A docker container for Foundry VTT
 
+---
+
+**!! You need a valid license for running Foundry VTT !!**
+
+---
+
 ## Starting Foundry VTT
 
 A directory for the data is required.

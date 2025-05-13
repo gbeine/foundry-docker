@@ -7,13 +7,11 @@ ENV FOUNDRY_HOME=/foundry
 ENV FOUNDRY_DIST=FoundryVTT-$VERSION.zip
 
 RUN set -eux; \
-	\
 	mkdir -p $FOUNDRY_HOME
 
 COPY $FOUNDRY_DIST /
 
 RUN set -eux; \
-	\
 	unzip -d $FOUNDRY_HOME $FOUNDRY_DIST; \
 	rm $FOUNDRY_DIST
 

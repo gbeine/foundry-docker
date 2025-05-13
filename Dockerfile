@@ -4,7 +4,7 @@ ARG VERSION
 
 ENV FOUNDRY_DATA=/data
 ENV FOUNDRY_HOME=/foundry
-ENV FOUNDRY_DIST=FoundryVTT-$VERSION.zip
+ENV FOUNDRY_DIST=FoundryVTT-Node-$VERSION.zip
 
 RUN set -eux; \
 	mkdir -p $FOUNDRY_HOME
@@ -19,4 +19,4 @@ VOLUME $FOUNDRY_DATA
 
 EXPOSE 30000
 
-CMD node $FOUNDRY_HOME/resources/app/main.js --dataPath=$FOUNDRY_DATA --headless
+CMD node $FOUNDRY_HOME/main.js --dataPath=$FOUNDRY_DATA --headless
